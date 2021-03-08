@@ -242,16 +242,8 @@ Use get20s to do the following:
 Example born in 1901 and died in 1959 - included -- born in 1889 and died in 1925 not included
 If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 
-function get20s(artists){
-  const twenties = {};
-  for (i = 0; i < artists.length; i++){
-    if (artists.years > 1899 && artists.years < 2001){
-      return twenties.push(artists.name);
-    }
-    else if (artists.years < 1900 || artists.years > 2000) {
-      return null;
-    }
-  }
+function get20s(){
+  
 }
 
 
@@ -286,10 +278,10 @@ Use addArtist to do the following:
 
 Example: addArtist(artists) should return the artists array with the above object added to the end of the array. */
 
-function addArtist(/*Your Code Here*/){
-    /*Your Code Here*/
+function addArtist(arr, id, name, years, genre, nationality, bio){
+    arr.push({id, name, years, genre, nationality, bio});
+    return arr;
   }
-
   
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
