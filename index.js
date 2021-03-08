@@ -228,10 +228,11 @@ console.log(artists[8].name);
  
  Example, if getArtistByIndex is invoked with the artists array and the number 0, it will return `the artist at index 0 is Amedeo Modigliani` */
 
-function getArtistByIndex(artists, id) {
-  
+function getArtistByIndex(arr, index, name) {
+  name = arr.name;
+  return `the artist at index ${index} is ${arr.name}`;
 }  
-
+console.log(getArtistByIndex(0));
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -243,13 +244,13 @@ Example born in 1901 and died in 1959 - included -- born in 1889 and died in 192
 If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 
 function get20s(arr, years){
-  // const get20 = {};
-  // for (let i in arr){
-  //   if (arr['years'] > 1899 && arr['years'] < 2001){
-  //     get20.push( arr[i].name );
-  //   }
-    // return get20s;
-  // }
+  const get20 = {};
+  for (let i in arr){
+    if (arr['years'] > 1899 && arr['years'] < 2001){
+      get20.push( arr[i].name );
+    }
+    return get20s;
+  }
 }
 
 
